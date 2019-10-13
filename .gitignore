@@ -1,0 +1,10 @@
+/build/
+
+/html/
+/latex/
+/doc/
+
+.project
+.cproject
+.idea
+cmake-build-debug
