@@ -20,6 +20,7 @@
 #define COFFEEMAKER_HPP_
 
 #include <string>
+#include <coffeepot.hpp>
 
 #define COFFEE_MAKER // Used by implementing programs to detect presence of API
 #define COFFEE_MAKER_VERSION "0.0.1"

@@ -94,7 +94,7 @@ void unknown_arg(char *arg) {
 int main(int argc, char **argv) {
     if (argc <= 1)
         print_help();
-    auto *maker = new CoffeeMaker();
+    CoffeeMaker *maker = new CoffeeMaker();
 
     if (argc > 2) {
         for (int i = 1; i < argc - 1; i++) {
