@@ -23,7 +23,7 @@
 
 #define COFFEE_MAKER // Used by implementing programs to detect presence of API
 #define COFFEE_MAKER_VERSION "0.0.1"
-#define POT_MAGIC_NUMBER 0xC0FFEE
+#define POWDDER_MAGIC_NUMBER 0xC0FFEE
 
 void _compiler_info(const std::string& text);
 void _compiler_err(const std::string& text);
