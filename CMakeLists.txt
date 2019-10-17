@@ -1,5 +1,9 @@
-cmake_minimum_required (VERSION 2.6)
+cmake_minimum_required (VERSION 3.13)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project (coffeemaker)
 
+include_directories(coffeepot/src)
 add_executable(coffeemaker src/coffeemaker.cpp)

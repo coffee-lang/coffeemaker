@@ -76,13 +76,16 @@ void print_license() {
 }
 
 void print_help() {
-    std::cout << "CoffeeMaker " << COFFEE_MAKER_VERSION << std::endl;
+    std::cout << "CoffeeMaker Compiler v" << COFFEE_MAKER_VERSION << std::endl;
     std::cout << "coffeemaker [options] PATH" << std::endl;
-    std::cout << "\t-h, --help\tShows this help page" << std::endl;
-    std::cout << "\t--license\tPrints the program's license and exists." << std::endl;
+    std::cout << "-- General Options" << std::endl;
+    std::cout << "\t-q, --quiet\tPrevents the compiler from printing to stdout and stderr." << std::endl;
+    std::cout << "-- Compiler Options" << std::endl;
     std::cout << "\t-d, --dev\tTells the compiler to build in development mode." << std::endl;
-    std::cout << "\t-q, --quiet\tPrevents the compiler from printing to stdout and stderr."
-              << std::endl;
+    std::cout << "-- About CoffeeMaker" << std::endl;
+    std::cout << "\t-h, --help\tShows this help page" << std::endl;
+    std::cout << "\t-v, --version\tPrints version information and exists." << std::endl;
+    std::cout << "\t--license\tPrints the program's license and exists." << std::endl;
     std::exit(0);
 }
 
@@ -100,6 +103,9 @@ int main(int argc, char **argv) {
         for (int i = 1; i < argc - 1; i++) {
             if (strcmp("-h", argv[i]) == 0 || strcmp("--help", argv[i]) == 0) {
                 print_help();
+            } else if (strcmp("-v", argv[i]) == 0 || strcmp("--version", argv[i]) == 0) {
+                std::cout << "CoffeeMaker Compiler v" << COFFEE_MAKER_VERSION << std::endl;
+                std::exit(0);
             } else if (strcmp("--license", argv[i]) == 0) {
                 print_license();
                 std::exit(0);

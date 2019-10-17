@@ -42,7 +42,6 @@ public:
      * Returns whether the CoffeeMaker::brew() method has been called.
      */
     bool is_brewing();
-
 };
 
 #endif /* COFFEEMAKER_HPP_ */
